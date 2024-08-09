@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fafafa;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .navbar .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .navbar .nav-links a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  /* Main Content */
+  #auth-container, #profile-setup, #home {
+    padding-top: 60px; /* Space for the fixed navbar */
+  }
+  
+  #auth-container, #profile-setup {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  #auth-container form, #profile-setup form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #auth-container input, #profile-setup input, #profile-setup button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  #auth-container button, #profile-setup button {
+    background-color: #0095f6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #auth-error {
+    color: red;
+  }
+  
+  /* Home Page */
+  #home {
+    padding: 20px;
+  }
+  
+  #home h1 {
+    margin-bottom: 20px;
+  }
+  
+  #posts-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .post {
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  
+  .post-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .profile-pic {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .username {
+    font-weight: bold;
+  }
+  
+  .post-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .post-actions {
+    padding: 10px;
+  }
+  
+  .like-button, .comment-button {
+    background-color: #0095f6;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .comments {
+    padding: 10px;
+  }
+  
+  .comment {
+    margin-bottom: 5px;
+  }
+  
+  .comment-username {
+    font-weight: bold;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #ffffff;
+    border-top: 1px solid #eaeaea;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  .footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  

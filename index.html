@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="#">SocialApp</a>
+      </div>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Explore</a>
+        <a href="#">Messages</a>
+        <a href="#">Profile</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Authentication Container -->
+  <div id="auth-container">
+    <form id="sign-up-form">
+      <h2>Sign Up</h2>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Sign Up</button>
+      <p id="auth-error"></p>
+    </form>
+  </div>
+
+  <!-- Profile Setup -->
+  <div id="profile-setup" style="display:none;">
+    <form id="profile-form">
+      <h2>Set Up Your Profile</h2>
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="date" id="birthday" required>
+      <input type="file" id="profile-pic">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- Home Page -->
+  <div id="home" style="display:none;">
+    <h1>Welcome to SocialApp</h1>
+    <button id="upload-video-btn">Upload Video</button>
+    <input type="file" id="video-file" accept="video/*">
+    <div id="posts-container"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 SocialApp. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Firebase CDN -->
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-storage.js"></script>
+
+  <!-- Your Custom JavaScript -->
+  <script src="script.js" defer></script>
+</body>
+</html>
